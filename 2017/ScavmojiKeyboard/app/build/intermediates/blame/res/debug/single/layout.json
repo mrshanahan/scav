@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emoticons_item.xml",
+        "source": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\src\\main\\res\\layout\\emoticons_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\build\\intermediates\\res\\merged\\debug\\layout\\footer.xml",
+        "source": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\src\\main\\res\\layout\\footer.xml"
+    },
+    {
+        "merged": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emoticons_popup.xml",
+        "source": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\src\\main\\res\\layout\\emoticons_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chatlist_item.xml",
+        "source": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\src\\main\\res\\layout\\chatlist_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\build\\intermediates\\res\\merged\\debug\\layout\\text_layout.xml",
+        "source": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\src\\main\\res\\layout\\text_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emoticons_grid.xml",
+        "source": "C:\\Users\\matt\\scav\\code\\2017\\Emoticons-Keyboard\\app\\src\\main\\res\\layout\\emoticons_grid.xml"
+    }
+]
