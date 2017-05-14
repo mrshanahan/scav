@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_bd267f7b98f55d2f857c80fb74bb51454079a85e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\e02f038dc66e61eb94be13143f6f376d4947b6e1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_41497eb4f202f4d76fdd30e626023147339d5e56\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\scav\od-compass\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4bad12131e019babd1396462069d24b06fcad371">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0a7f98e4e239b6b43fb10abffeea0e7a06882783\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\e02f038dc66e61eb94be13143f6f376d4947b6e1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_41497eb4f202f4d76fdd30e626023147339d5e56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\634e4728e002db69fd883f7cf4efc4946d1d29f2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_f16bc2f0b34fb8bf3f9973c2a5fc0b0c81e31029.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\scav\od-compass\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_710b0742893a4e3b1bb7d391ad44f538c5327941\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\634e4728e002db69fd883f7cf4efc4946d1d29f2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f16bc2f0b34fb8bf3f9973c2a5fc0b0c81e31029\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\6996d7751b098cf86bfebea081e0796e696ea932\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_ec5fd0499be4b8ec47ce9f2919a6ef8442a05b10.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\556880d1a9406556204bead6268f944dc6c02fa3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c5c0525c221c3cb7e1cff97baa92cc84939b8fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\97c5eabd88c0a69915fcf9d669c33b8c2907c960\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d96ee13b5a6b890782f74a67c8d2bf5859e3b256\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\1e1b541e4a6b648fa3ecb21c50e587755dae3851\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ff2490ad33da8ccf401f6874cd9150794a1d7ccd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\9e6c020ed1b7567bbf84f0bd49948a33fce934cd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_20ce4cfeda4c357d985b2653d50d7654e1986dfa\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\556880d1a9406556204bead6268f944dc6c02fa3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_4c5c0525c221c3cb7e1cff97baa92cc84939b8fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\1e1b541e4a6b648fa3ecb21c50e587755dae3851\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_ff2490ad33da8ccf401f6874cd9150794a1d7ccd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\3dcefe9c612edc8eb2e8a4ceb2c09cdca2afdcad\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_201017050ab08ccead0801d434fd2144a01f6cd6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\9e6c020ed1b7567bbf84f0bd49948a33fce934cd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_20ce4cfeda4c357d985b2653d50d7654e1986dfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\3dcefe9c612edc8eb2e8a4ceb2c09cdca2afdcad\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_201017050ab08ccead0801d434fd2144a01f6cd6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\c8b832d74638a596325913edd847a6ade2e8a0c6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_d5794702620338b727f1b2c0609d633861316387.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\c8b832d74638a596325913edd847a6ade2e8a0c6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d5794702620338b727f1b2c0609d633861316387\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\.android\build-cache\97c5eabd88c0a69915fcf9d669c33b8c2907c960\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\classes_d96ee13b5a6b890782f74a67c8d2bf5859e3b256.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\matt\.android\build-cache\6996d7751b098cf86bfebea081e0796e696ea932\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec5fd0499be4b8ec47ce9f2919a6ef8442a05b10\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\matt\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\matt\scav\od-compass\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_bd267f7b98f55d2f857c80fb74bb51454079a85e.jar" />
+    </item>
+
+</items>
