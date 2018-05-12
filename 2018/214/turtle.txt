@@ -1,0 +1,140 @@
+﻿seth 90
+fd 150
+seth 270
+fd 100
+seth 45
+fd 70.7106781186548
+seth 225
+fd 70.7106781186548
+seth 315
+fd 70.7106781186548
+seth 0
+fd 25
+seth 90
+arc -25 180
+fd 75
+seth 90
+arc -25 180
+fd 75
+seth 0
+fd 75
+seth 90
+fd 100
+seth 270
+arc -25 180
+fd 75
+fd 75
+seth 270
+fd 100
+seth 0
+fd 25
+seth 90
+arc -25 180
+fd 75
+seth 270
+fd 75
+seth 90
+arc -25 180
+fd 75
+seth 270
+fd 75
+seth 0
+fd 25
+seth 90
+fd 50
+seth 270
+arc 50 
+fd 150
+seth 90
+fd 100
+seth 90
+arc -25 180
+fd 125
+seth 90
+arc 25 180
+fd 50
+seth 180
+fd 25
+seth 0
+fd 50
+seth 180
+fd 25
+seth 270
+fd 75
+seth 0
+fd 62.5
+arc 37.5 
+fd 62.5
+seth 90
+arc -25 180
+fd 75
+seth 90
+arc 25 180
+fd 75
+seth 90
+arc -25 180
+fd 75
+seth 270
+fd 75
+seth 90
+arc -25 180
+fd 75
+seth 270
+fd 75
+seth 0
+fd 25
+seth 90
+fd 50
+seth 0
+fd 100
+seth 90
+arc 50 330
+seth 90
+fd 50
+seth 270
+arc 50 
+fd 150
+seth 80
+fd 100
+seth 0
+fd 125
+seth 90
+fd 150
+seth 270
+fd 150
+seth 0
+fd 25
+seth 90
+fd 50
+seth 0
+fd 100
+seth 90
+arc 50 270
+seth 0
+fd 175
+seth 90
+fd 100
+seth 270
+arc -50 
+fd 50
+fd 50
+seth 0
+fd 25
+seth 90
+fd 25
+seth 270
+arc 25 270
+arc -25 270
+seth 90
+arc 25 270
+arc -25 270
+seth 270
+fd 25
+seth 0
+fd 75
+seth 90
+fd 50
+seth 0
+fd 100
+seth 90
+arc 50 330
