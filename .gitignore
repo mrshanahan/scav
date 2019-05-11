@@ -9,3 +9,5 @@
 .externalNativeBuild
 *.rawproto
 .idea
+*.mp4
+2018/presentations
