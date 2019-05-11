@@ -5,7 +5,8 @@ begin
     "import turtle"
     "import math"
     [string] $RADICAL = "√"
-    Write-Host $RADICAL.ToCharArray()
+    $ENCODING = New-Object System.Text.UTF7Encoding
+    Write-Host ([System.Text.Encoding]::UTF7.GetString($ENCODING.GetBytes($RADICAL)))
 }
 process
 {

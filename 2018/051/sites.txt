@@ -1,0 +1,217 @@
+X uchicago.edu
+X civicengagement.uchicago.edu
+X www.ucls.uchicago.edu
+X gems.uchicago.edu
+X cehd.uchicago.edu
+X consortium.uchicago.edu
+X grahamschool.uchicago.edu
+X uchicagoimpact.uchicago.edu
+X scholarsatrisk.uchicago.edu
+X mindbytes.uchicago.edu
+X www.norc.uchicago.edu
+X www.journals.uchicago.edu
+X bfi.uchicago.edu
+X oplsouthside.uchicago.edu
+X uhi.uchicago.edu
+X toandthrough.uchicago.edu
+X www.press.uchicago.edu
+X cancer.uchicago.edu
+X campaign.uchicago.edu
+X uei.uchicago.edu
+X collegeadmissions.uchicago.edu
+X www.chapin.uchicago.edu
+X chemistry.uchicago.edu
+X arts.uchicago.edu
+X oi.uchicago.edu
+X www.iic.uchicago.edu
+X math.uchicago.edu
+X chas.uchicago.edu
+X politics.uchicago.edu
+X ccct.uchicago.edu
+X blackyouthproject.uchicago.edu
+X dssg.uchicago.edu
+X gsb.uchicago.edu
+X gsbem1.uchicago.edu
+X ime.uchicago.edu
+X gc.uchicago.edu
+X enhancinglife.uchicago.edu
+X odyssey.uchicago.edu
+X chronicle.uchicago.edu
+X e2e.uchicago.edu
+X divinity.uchicago.edu
+X courttheatre.uchicago.edu
+X coup.uchicago.edu
+X knowledgelab.uchicago.edu
+X facilities.uchicago.edu
+X sg.uchicago.edu
+X languages.uchicago.edu
+X architecture.uchicago.edu
+X jobs.uchicago.edu
+X financialaid.uchicago.edu
+X nuclearreactions.uchicago.edu
+X fom.uchicago.edu
+X stephenslab.uchicago.edu
+X researchdevelopment.uchicago.edu
+X incidentreports.uchicago.edu
+X smartcollection.uchicago.edu
+X highlab.uchicago.edu
+X asc.uchicago.edu
+X whpk.uchicago.edu
+X clelandlab.uchicago.edu
+X summer.uchicago.edu
+X squishycell.uchicago.edu
+X internationalaffairs.uchicago.edu
+X marketplace.uchicago.edu
+X mag.uchicago.edu
+X harris.uchicago.edu
+X www.law.uchicago.edu
+X college.uchicago.edu
+X www.ci.uchicago.edu
+X guides.lib.uchicago.edu
+X lib.uchicago.edu
+X philosophy.uchicago.edu
+X news.uchicago.edu
+X alumniandfriends.uchicago.edu
+X oi-idb.uchicago.edu
+X criticalinquiry.uchicago.edu
+X home.uchicago.edu
+X humanresources.uchicago.edu
+X smartmuseum.uchicago.edu
+X safety-security.uchicago.edu
+X lucian.uchicago.edu
+X fgf.uchicago.edu
+X biosciences.uchicago.edu
+X dining.uchicago.edu
+X ceres.cs.uchicago.edu
+X talapinlab.uchicago.edu
+X deansfund.uchicago.edu
+X clerkgroup.uchicago.edu
+X ichep2016.uchicago.edu
+X discoveryseries.uchicago.edu
+X finmath.uchicago.edu
+X csrpc.uchicago.edu
+X ibc.uchicago.edu
+X stemed.uchicago.edu
+X civicknowledge.uchicago.edu
+X promise.uchicago.edu
+X berlinfamilylectures.uchicago.edu
+X financialeconomics.uchicago.edu
+X oeconomica.uchicago.edu
+X workday.uchicago.edu
+X summerconferences.uchicago.edu
+X obgyn.uchicago.edu
+X convocations.uchicago.edu
+X online.uchicago.edu
+X surveylab.uchicago.edu
+X sshmp.uchicago.edu
+X lynda.uchicago.edu
+X bursar.uchicago.edu
+X ccss.uchicago.edu
+O sifk.uchicago.edu
+X coe.uchicago.edu
+X diversity.uchicago.edu
+X jfi.uchicago.edu
+X summerlanguages.uchicago.edu
+X creativewriting.uchicago.edu
+X cms.uchicago.edu
+X chicagopresents.uchicago.edu
+X culturalpolicy.uchicago.edu
+X legalcounsel.uchicago.edu
+X 125.uchicago.edu
+X housing.uchicago.edu
+X cobeylab.uchicago.edu
+X registrar.uchicago.edu
+X ibd.uchicago.edu
+X telledfu.uchicago.edu
+X munrolab.uchicago.edu
+X everydaymath.uchicago.edu
+X spirit.uchicago.edu
+X pole.uchicago.edu
+X pppdb.uchicago.edu
+X irvinelab.uchicago.edu
+X cam.uchicago.edu
+X freeexpression.uchicago.edu
+X tmwcenter.uchicago.edu
+X humanrights.uchicago.edu
+X alumniweekend.uchicago.edu
+X cha.uchicago.edu
+X anthropology.uchicago.edu
+X schusterlab.uchicago.edu
+X tianlab.uchicago.edu
+X www.isa.uchicago.edu
+X bensmaialab.uchicago.edu
+X dwyerlab.uchicago.edu
+X teaching.uchicago.edu
+X cier.uchicago.edu
+X salc.uchicago.edu
+X facultyaccess.uchicago.edu
+X noboundaries.uchicago.edu
+X slavic.uchicago.edu
+X evaluations.uchicago.edu
+X galligroup.uchicago.edu
+X microbiome.uchicago.edu
+X efi.uchicago.edu
+X pritzker.uchicago.edu
+X collegecatalog.uchicago.edu
+X trustees.uchicago.edu
+X givetomedicine.uchicago.edu
+X urbanlabs.uchicago.edu
+X cri.uchicago.edu
+X africanstudies.uchicago.edu
+X history.uchicago.edu
+X security.uchicago.edu
+X clinicaleffectiveness.uchicago.edu
+X salrc.uchicago.edu
+X visit.uchicago.edu
+X ura.uchicago.edu
+X parents.uchicago.edu
+X mapss.uchicago.edu
+X scglass.uchicago.edu
+X paulsereno.uchicago.edu
+businessdiversity.uchicago.edu
+xts.uchicago.edu
+quiet.uchicago.edu
+centraleurasia.uchicago.edu
+thestudies.uchicago.edu
+bsdacademicaffairs.uchicago.edu
+socialthought.uchicago.edu
+cpo.uchicago.edu
+ais.uchicago.edu
+mantisshrimp.uchicago.edu
+its.uchicago.edu
+athletics.uchicago.edu
+rll.uchicago.edu
+economics.uchicago.edu
+studentmanual.uchicago.edu
+esl.uchicago.edu
+centerinparis.uchicago.edu
+collegiatescholars.uchicago.edu
+chss.uchicago.edu
+urban.uchicago.edu
+ceeres.uchicago.edu
+tls.uchicago.edu
+tevcat.uchicago.edu
+tcd.uchicago.edu
+ucsc.uchicago.edu
+ihrclinic.uchicago.edu
+socialsciences.uchicago.edu
+tableau.uchicago.edu
+researchsafety.uchicago.edu
+omsa.uchicago.edu
+researchinnovation.uchicago.edu
+medicine.uchicago.edu
+enl.uchicago.edu
+gendersexuality.uchicago.edu
+chicagoreview.uchicago.edu
+coursesearch.uchicago.edu
+societyoffellows.uchicago.edu
+ealc.uchicago.edu
+newschicagobooth.uchicago.edu
+neubauercollegium.uchicago.edu
+music.uchicago.edu
+ncs.uchicago.edu
+nobarriers.uchicago.edu
+hittitedictionary.uchicago.edu
+english.uchicago.edu
+www.lib.uchicago.edu
+cryptoclubproject.uchicago.edu
