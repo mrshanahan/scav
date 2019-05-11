@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_send_marginTop">32dp</dimen>
+    <dimen name="fab_send_marginEnd">16dp</dimen>
+    <dimen name="edit_query_marginRight">64dp</dimen>
+    <dimen name="fab_search_marginLeft">8dp</dimen>
+</resources>

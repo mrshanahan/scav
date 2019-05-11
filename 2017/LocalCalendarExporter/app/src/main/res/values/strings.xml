@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LocalCalendarExporter</string>
+    <string name="action_send">Send</string>
+    <string name="action_help">Help</string>
+</resources>
