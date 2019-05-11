@@ -10,9 +10,9 @@ import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private UpdateTextViewRunner amplValueTextUpdateRunner = null;
     private WordSplitDetector wordSplitDetector = null;
     private MediaPlayer soundPlayer = null;
+    private ImageBlinker clappingsHandsImageBlinker = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +40,10 @@ public class MainActivity extends AppCompatActivity {
         progressBar = ((ProgressBar) findViewById(R.id.progressBar));
         TextView amplValueText = ((TextView) findViewById(R.id.amplValue));
         amplValueTextUpdateRunner = new UpdateTextViewRunner(amplValueText);
-
         wordSplitDetector = new WordSplitDetector(WORD_SPLIT_LOWER_BOUND, WORD_SPLIT_UPPER_BOUND);
+
+        ImageView clappingHandsImageView = ((ImageView) findViewById(R.id.clappingHands));
+        clappingsHandsImageBlinker = new ImageBlinker(clappingHandsImageView);
 
         ((Button) findViewById(R.id.btnStartRecord)).setOnClickListener(btnStartRecord_OnClick);
         ((Button) findViewById(R.id.btnStopRecord)).setOnClickListener(btnStopRecord_OnClick);
@@ -127,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(amplValueTextUpdateRunner);
 
                 if (wordSplitDetector.add((short) rms)) {
-                    playClap();
+                    performClap();
                 }
             }
         }
@@ -138,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         runOnUiThread(amplValueTextUpdateRunner);
     }
 
-    private void playClap() {
+    private void performClap() {
         Thread playingThread = new Thread(new Runnable() {
             public void run() {
                 playFile();
@@ -149,11 +152,28 @@ public class MainActivity extends AppCompatActivity {
 
     private void playFile() {
         soundPlayer.start();
-        while (soundPlayer.isPlaying()) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ex) {
-                // pffff as if
+        runOnUiThread(clappingsHandsImageBlinker);
+        try {
+            Thread.sleep(400);
+        } catch (InterruptedException ex) {}
+        runOnUiThread(clappingsHandsImageBlinker);
+    }
+
+    private class ImageBlinker implements Runnable {
+        private ImageView _imageView;
+
+        ImageBlinker(ImageView imageView) {
+            _imageView = imageView;
+        }
+
+        @Override
+        public void run() {
+            int visibility = _imageView.getVisibility();
+            if (visibility == View.VISIBLE) {
+                _imageView.setVisibility(View.INVISIBLE);
+            }
+            else {
+                _imageView.setVisibility(View.VISIBLE);
             }
         }
     }
