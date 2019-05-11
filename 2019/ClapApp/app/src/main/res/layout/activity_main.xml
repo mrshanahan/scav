@@ -6,61 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TableLayout
+    <Button
+        android:id="@+id/btnStopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnStartRecord"
+        tools:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_toRightOf="@+id/btnStartRecord" />
+
+    <Button
+        android:id="@+id/btnStartRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnStopRecord"
+        tools:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintRight_toLeftOf="@+id/btnStopRecord" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="100dp"
+        android:max="4000"
+        android:progressDrawable="@drawable/progress"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <ProgressBar
-                android:id="@+id/progressBar"
-                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:max="4000"
-                android:progressDrawable="@drawable/progress" />
-
-            <TextView
-                android:id="@+id/amplValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="0" />
-
-            <TextView
-                android:id="@+id/words"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/btnStartRecord"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="Start"
-                tools:layout_editor_absoluteX="73dp"
-                tools:layout_editor_absoluteY="463dp" />
-
-            <Button
-                android:id="@+id/btnStopRecord"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stop"
-                tools:layout_editor_absoluteX="255dp" />
-
-        </TableRow>
-
-    </TableLayout>
+    <TextView
+        android:id="@+id/amplValue"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnStartRecord" />
 
 </android.support.constraint.ConstraintLayout>

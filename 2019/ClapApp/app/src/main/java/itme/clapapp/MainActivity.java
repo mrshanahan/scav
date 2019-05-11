@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     private Thread recordingThread = null;
     private boolean isRecording = false;
     private UpdateTextViewRunner amplValueTextUpdateRunner = null;
-    private UpdateTextViewRunner wordsTextUpdateRunner = null;
     private WordSplitDetector wordSplitDetector = null;
     private MediaPlayer soundPlayer = null;
 
@@ -40,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
         progressBar = ((ProgressBar) findViewById(R.id.progressBar));
         TextView amplValueText = ((TextView) findViewById(R.id.amplValue));
         amplValueTextUpdateRunner = new UpdateTextViewRunner(amplValueText);
-
-        TextView wordsText = ((TextView) findViewById(R.id.words));
-        wordsTextUpdateRunner = new UpdateTextViewRunner(wordsText);
 
         wordSplitDetector = new WordSplitDetector(WORD_SPLIT_LOWER_BOUND, WORD_SPLIT_UPPER_BOUND);
 
@@ -114,9 +110,6 @@ public class MainActivity extends AppCompatActivity {
     private void captureAudio() {
         short[] sData = new short[BufferElements2Rec];
 
-        wordsTextUpdateRunner.setValue("0");
-        runOnUiThread(wordsTextUpdateRunner);
-
         int numWords = 0;
         while (isRecording) {
             // display root mean square of amplitude
@@ -135,9 +128,6 @@ public class MainActivity extends AppCompatActivity {
 
                 if (wordSplitDetector.add((short) rms)) {
                     playClap();
-                    numWords += 1;
-                    wordsTextUpdateRunner.setValue(String.valueOf(numWords));
-                    runOnUiThread(wordsTextUpdateRunner);
                 }
             }
         }
@@ -146,9 +136,6 @@ public class MainActivity extends AppCompatActivity {
 
         amplValueTextUpdateRunner.setValue("0");
         runOnUiThread(amplValueTextUpdateRunner);
-
-        wordsTextUpdateRunner.setValue("0");
-        runOnUiThread(wordsTextUpdateRunner);
     }
 
     private void playClap() {
@@ -165,7 +152,9 @@ public class MainActivity extends AppCompatActivity {
         while (soundPlayer.isPlaying()) {
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException ex) {}
+            } catch (InterruptedException ex) {
+                // pffff as if
+            }
         }
     }
 
