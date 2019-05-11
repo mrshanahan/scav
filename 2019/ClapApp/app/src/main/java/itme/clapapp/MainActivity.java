@@ -11,9 +11,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private static final int RECORDER_CHANNELS = AudioFormat.CHANNEL_IN_MONO;
     private static final int RECORDER_AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
     private static final short WORD_SPLIT_LOWER_BOUND = 1000;
-    private static final short WORD_SPLIT_UPPER_BOUND = 1800;
+    private static final short DEFAULT_WORD_SPLIT_UPPER_BOUND = 1800;
+    private static final short MAX_WORD_SPLIT_UPPER_BOUND = 5000;
     private AudioRecord recorder = null;
     private Thread recordingThread = null;
     private boolean isRecording = false;
@@ -30,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
     private WordSplitDetector wordSplitDetector = null;
     private MediaPlayer soundPlayer = null;
     private ImageBlinker clappingsHandsImageBlinker = null;
+    private TextView thresholdView = null;
+
+    private int wordSplitUpperBound = DEFAULT_WORD_SPLIT_UPPER_BOUND;
+
+    int BufferElements2Rec = 1024; // want to play 2048 (2K) since 2 bytes we use only 1024
+    int BytesPerElement = 2; // 2 bytes in 16bit format
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +44,17 @@ public class MainActivity extends AppCompatActivity {
 
         TextView amplValueText = findViewById(R.id.amplValue);
         amplValueTextUpdateRunner = new UpdateTextViewRunner(amplValueText);
-        wordSplitDetector = new WordSplitDetector(WORD_SPLIT_LOWER_BOUND, WORD_SPLIT_UPPER_BOUND);
+        wordSplitDetector = new WordSplitDetector(WORD_SPLIT_LOWER_BOUND);
 
         ImageView clappingHandsImageView = findViewById(R.id.clappingHands);
         clappingsHandsImageBlinker = new ImageBlinker(clappingHandsImageView);
+
+        thresholdView = findViewById(R.id.thresholdView);
+
+        SeekBar seekBar = findViewById(R.id.thresholdSeekBar);
+        seekBar.setOnSeekBarChangeListener(thresholdSeeker_OnSeekBarChangedListener);
+        seekBar.setMax(MAX_WORD_SPLIT_UPPER_BOUND);
+        seekBar.setProgress(DEFAULT_WORD_SPLIT_UPPER_BOUND);
 
         int bufferSize = AudioRecord.getMinBufferSize(RECORDER_SAMPLERATE,
                 RECORDER_CHANNELS, RECORDER_AUDIO_ENCODING);
@@ -59,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
         stopRecording();
     }
 
-    private Boolean permissionGranted = false;
-
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         if (requestCode == 1) {
@@ -68,13 +79,23 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,
                         "Permission denied to record audio. This permission will be needed to use this app.",
                         Toast.LENGTH_LONG);
-                permissionGranted = true;
             }
         }
     }
 
-    int BufferElements2Rec = 1024; // want to play 2048 (2K) since 2 bytes we use only 1024
-    int BytesPerElement = 2; // 2 bytes in 16bit format
+    private SeekBar.OnSeekBarChangeListener thresholdSeeker_OnSeekBarChangedListener = new SeekBar.OnSeekBarChangeListener() {
+        @Override
+        public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+            wordSplitUpperBound = i;
+            thresholdView.setText(String.valueOf(wordSplitUpperBound));
+        }
+
+        @Override
+        public void onStartTrackingTouch(SeekBar seekBar) {}
+
+        @Override
+        public void onStopTrackingTouch(SeekBar seekBar) {}
+    };
 
     private void startRecording() {
         checkRecordPermission();
@@ -179,12 +200,11 @@ public class MainActivity extends AppCompatActivity {
 
     // Detects whether a definite sound has been detected.
     private class WordSplitDetector {
-        private short _lowerThreshold, _upperThreshold;
+        private short _lowerThreshold;
         private boolean _wordDetected;
 
-        WordSplitDetector(short lowerThreshold, short upperThreshold) {
+        WordSplitDetector(short lowerThreshold) {
             _lowerThreshold = lowerThreshold;
-            _upperThreshold = upperThreshold;
             _wordDetected = false;
         }
 
@@ -194,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
 
-            if (!_wordDetected && value >= _upperThreshold) {
+            if (!_wordDetected && value >= wordSplitUpperBound) {
                 _wordDetected = true;
             }
             return false;
