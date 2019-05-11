@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     private static final short WORD_SPLIT_LOWER_BOUND = 1000;
     private static final short WORD_SPLIT_UPPER_BOUND = 1800;
     private AudioRecord recorder = null;
-    private ProgressBar progressBar = null;
     private Thread recordingThread = null;
     private boolean isRecording = false;
     private UpdateTextViewRunner amplValueTextUpdateRunner = null;
@@ -37,19 +36,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        progressBar = ((ProgressBar) findViewById(R.id.progressBar));
-        TextView amplValueText = ((TextView) findViewById(R.id.amplValue));
+        TextView amplValueText = findViewById(R.id.amplValue);
         amplValueTextUpdateRunner = new UpdateTextViewRunner(amplValueText);
         wordSplitDetector = new WordSplitDetector(WORD_SPLIT_LOWER_BOUND, WORD_SPLIT_UPPER_BOUND);
 
-        ImageView clappingHandsImageView = ((ImageView) findViewById(R.id.clappingHands));
+        ImageView clappingHandsImageView = findViewById(R.id.clappingHands);
         clappingsHandsImageBlinker = new ImageBlinker(clappingHandsImageView);
-
-        ((Button) findViewById(R.id.btnStartRecord)).setOnClickListener(btnStartRecord_OnClick);
-        ((Button) findViewById(R.id.btnStopRecord)).setOnClickListener(btnStopRecord_OnClick);
 
         int bufferSize = AudioRecord.getMinBufferSize(RECORDER_SAMPLERATE,
                 RECORDER_CHANNELS, RECORDER_AUDIO_ENCODING);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        startRecording();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopRecording();
     }
 
     private Boolean permissionGranted = false;
@@ -113,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
     private void captureAudio() {
         short[] sData = new short[BufferElements2Rec];
 
-        int numWords = 0;
         while (isRecording) {
             // display root mean square of amplitude
             double sum = 0;
@@ -124,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
             if (readSize > 0) {
                 final double amplitude = sum / readSize;
                 final int rms = (int) Math.sqrt(amplitude);
-                progressBar.setProgress(rms);
 
                 amplValueTextUpdateRunner.setValue(String.valueOf(rms));
                 runOnUiThread(amplValueTextUpdateRunner);
@@ -135,8 +140,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        progressBar.setProgress(0);
-
         amplValueTextUpdateRunner.setValue("0");
         runOnUiThread(amplValueTextUpdateRunner);
     }
@@ -144,19 +147,15 @@ public class MainActivity extends AppCompatActivity {
     private void performClap() {
         Thread playingThread = new Thread(new Runnable() {
             public void run() {
-                playFile();
+                soundPlayer.start();
+                runOnUiThread(clappingsHandsImageBlinker);
+                try {
+                    Thread.sleep(400);
+                } catch (InterruptedException ex) {}
+                runOnUiThread(clappingsHandsImageBlinker);
             }
         }, "AudioRecorder Thread");
         playingThread.start();
-    }
-
-    private void playFile() {
-        soundPlayer.start();
-        runOnUiThread(clappingsHandsImageBlinker);
-        try {
-            Thread.sleep(400);
-        } catch (InterruptedException ex) {}
-        runOnUiThread(clappingsHandsImageBlinker);
     }
 
     private class ImageBlinker implements Runnable {
@@ -222,23 +221,4 @@ public class MainActivity extends AppCompatActivity {
             _ref.setText(_value);
         }
     }
-
-    private void toggleButtons(boolean recording) {
-        ((Button) findViewById(R.id.btnStartRecord)).setEnabled(!recording);
-        ((Button) findViewById(R.id.btnStopRecord)).setEnabled(recording);
-    }
-
-    private View.OnClickListener btnStartRecord_OnClick = new View.OnClickListener() {
-        public void onClick(View v) {
-            startRecording();
-            toggleButtons(true);
-        }
-    };
-
-    private View.OnClickListener btnStopRecord_OnClick = new View.OnClickListener() {
-        public void onClick(View v) {
-            stopRecording();
-            toggleButtons(false);
-        }
-    };
 }
